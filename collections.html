@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <h1> Mahir's Bay</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showSidenavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!----- side navbar ----->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closeSidenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+    </div>
+
+    <!----- Collections ----->
+    <div class="collections">
+        <h2>Collections</h2>
+
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search" onkeyup="event">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+
+        <div class="products" id="products">
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?baby?1">
+                <p>White Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?baby?2">
+                <p>White Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?baby?3">
+                <p>Black Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?baby?4">
+                <p>Blue Shirt</p>
+            </div>
+        
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?kids?1">
+                <p>Pink Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?kids?2">
+                <p>Yellow Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?kids?3">
+                <p>Voilet Shirt</p>
+            </div>
+
+            <div class="products-box">
+                <img src="https://picsum.photos/250/250?kids?4">
+                <p>Red Shirt</p>
+            </div>
+        </div>
+    </div>
+
+     <!----- footer ----->
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2 class="footer-heading">Mahir's Bay</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam ad nulla cum totam</p>
+                <div class="footer-icon">
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-facebook"></i>
+                </div>
+            </div>
+        </div>
+        <p>@ Copyrights 2024 Mahir's Bay</p>
+     </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

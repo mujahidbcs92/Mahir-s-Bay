@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*------ navbar -----*/
+.navbar{
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-link a{
+    text-decoration: none;
+    color:darkslategray;
+}
+
+.navbar-link a:hover{
+    text-decoration: underline;
+    color:rgb(74, 129, 65);
+}
+
+.navbar-menu-toggle{
+    display: none;
+}
+
+/*-----side navbar-----*/
+.side-navbar{
+    position: fixed;
+    top: 0;
+    left: -60%;
+    color:white;
+    background-color:darkslategray;
+    padding: 20px;
+    width: 50%;
+    height: 100%;
+    transition: 1s;
+}
+
+.side-navbar-link{
+   margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+    color: white;
+    text-decoration: none;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+}
+
+/*-----Header-----*/
+.header{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 50px;
+    background-color: aliceblue;
+}
+
+.header h1{
+    margin: 10px 0px;
+}
+
+.header-button{
+    padding: 10px 20px;
+    background-color:darkslategray;
+    color: white;
+    margin-top: 20px;
+    border: none;
+}
+
+.header-image img{
+    border-radius: 10px;
+}
+
+/*-----Service-----*/
+.service{
+    margin: 50px 10px;
+}
+
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.service-container-2{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.service-container-2 div{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*-----New Arrivals-----*/
+.new-arrivals{
+    margin: 50px 10px;
+    padding: 10px;
+}
+
+.new-arrivals h2{
+    margin-bottom: 20px;
+}
+
+.new-arrivals-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.new-arrivals-box{
+    position: relative;
+    flex-basis: 20%;
+    align-items: center;
+}
+
+.new-arrivals-container img{
+    border-radius: 10px;
+}
+
+.new-arrivals-container button{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    border-radius: 10px;
+    background-color: darkslategray;
+    color: #fff;
+    border:none;
+    padding: 10px 20px;
+}
+
+/*-----New Arrivals-----*/
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    background-color: aliceblue;
+}
+
+.news input{
+    padding: 10px;
+    width: 40vh;
+    margin-bottom: 10px;
+    border: 2px solid darkslategray
+}
+
+.news button{
+    padding: 10px 20px;
+    background-color:darkslategray;
+    color: white;
+    border: none;
+}
+
+/*------------------collections---------------*/
+.collections{
+    margin: 20px;
+}
+
+.collections h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.product-search{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid darkslategray;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus{
+   outline: none;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.products-box{
+    flex-basis: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+/*-----Footer-----*/
+.footer{
+    background-color: darkslategrey;
+    color: white;
+    padding:50px 20px;
+
+}
+
+
+/*------media query----*/
+@media screen and (max-width: 800px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+
+    .navbar-links{
+        display: none;
+    }
+
+    .header-image{
+        display: none;
+    }
+
+    .service-container-1{
+        display: none;
+    }
+
+    .service-container-2{
+        flex-direction: column;
+    }
+
+    .new-arrivals-box{
+        flex-basis: 40%;
+    }
+}
